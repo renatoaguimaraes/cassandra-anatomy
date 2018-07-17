@@ -14,7 +14,6 @@ dump -  Dump the contents of a full query log
 ```
 assassinate -  Forcefully remove a dead node without re-replicating any data.  Use as a last resort if you cannot removenode
   args: <ip_address> -  IP address of the endpoint to assassinate
-resume -  Resume bootstrap streaming
 cleanup -  Triggers the immediate cleanup of keys no longer belonging to a node. By default, clean all keyspaces
   args: [<keyspace> <tables>...] -  The keyspace followed by one or many tables
   option: [-j, --jobs] -  Number of sstables to cleanup simultanously, set to 0 to use all available compaction threads
@@ -170,6 +169,7 @@ repair_admin -  list and fail incremental repair sessions
 replaybatchlog -  Kick off batchlog replay and wait for finish
 resetfullquerylog -  Stop the full query log and clean files in the configured full query log directory from cassandra.yaml as well as JMX
 resetlocalschema -  Reset node's local schema and resync
+resume -  Resume bootstrap streaming
 resumehandoff -  Resume hints delivery process
 ring -  Print information about the token ring
   args:  -  Specify a keyspace for accurate ownership information (topology awareness)
