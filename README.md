@@ -1,5 +1,14 @@
 # cassandra-anatomy
 
+### fqltool
+
+```
+dump -  Dump the contents of a full query log
+  args: <path1> [<path2>...<pathN>] -  Path containing the full query logs to dump.
+  option: [--roll-cycle] -  How often to roll the log file was rolled. May be necessary for Chronicle to correctly parse file names. (MINUTELY, HOURLY, DAILY). Default HOURLY.
+  option: [--follow] -  Upon reacahing the end of the log continue indefinitely waiting for more records
+```
+
 ### nodetool
 
 ```
